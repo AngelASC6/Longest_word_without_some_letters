@@ -38,7 +38,6 @@ for (let i= 0; i<words.length; i++){
  chillWord = true
  }
 }
-console.log(goodWords)
 let firstWord = goodWords[0]
 for(let l=1; l < goodWords.length; l++)
 {
@@ -55,8 +54,6 @@ for(let l=1; l < goodWords.length; l++)
   }
 }
 allTies.push(firstWord)
-console.log(firstWord)
-console.log(allTies)
 
 //compares all of the words that tied and finds the longest ties
 longestWord = allTies[allTies.length - 1]
@@ -67,5 +64,5 @@ for(let m=0; m<allTies.length; m++){
         longestWords.push(tie)
     }
 }
-console.log(longestWords)
-console.log("The longest words are "+ longestWord.length+ " Characters long.")
+console.log("The longest words are "+ longestWords)
+console.log("The longest word(s) are "+ longestWord.length+ " Characters long.")
